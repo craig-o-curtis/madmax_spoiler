@@ -1,0 +1,51 @@
+/* madmax.css */
+html {
+	max-height: 100%;
+}
+body {
+	background: black;
+
+	max-height: 100%;
+}
+
+.container {
+	position: relative;
+	max-width: 100%;
+	min-height: 100%;
+}
+
+.spoiler_container {
+	position: relative;
+}
+
+
+.spoiler {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 240px;
+	
+	text-align: center;
+
+	background: orangered;
+	color: black;
+
+	z-index: 1;
+	font-size: 3em;
+	border-radius: 20px;
+}
+
+.glow {
+	box-shadow: 0px 0px 50px 0px orangered;
+	color: orangered;
+	background: transparent;
+	-webkit-transition: box-shadow 8s, color 1s, background 1s;
+	transition: box-shadow 8s, color 1s, background 1s;
+}
+
+canvas {
+	z-index: -1;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
